@@ -37,17 +37,17 @@ export default class LoginPage extends Component {
                     {error.length > 0 ?
                         <div className="alert alert-danger fade in">{error}</div>
                         : ''}
-                    <form id="login-form"
+                    <form id="auth-data-form"
                           onSubmit={this.handleSubmit}>
                         <div>
                             <input type="email"
                                    id="login-email"
-                                   placeholder="email"/>
+                                   placeholder="Email"/>
                         </div>
                         <div>
                             <input type="password"
                                    id="login-password"
-                                   placeholder="password"/>
+                                   placeholder="Пароль"/>
                         </div>
                         <div id="forget-password-link">
                             <a>Забыли пароль?</a>
@@ -60,7 +60,7 @@ export default class LoginPage extends Component {
                             </input>
                         </div>
                         <div id="signup-link">
-                            <a>Зарегистрироваться</a>
+                            <Link to="/signup">Зарегистрироваться</Link>
                         </div>
                     </form>
                 </div>

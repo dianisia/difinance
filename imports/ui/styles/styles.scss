@@ -1,4 +1,4 @@
-#auth-form {
+#auth-form, #signup-form {
   position: absolute;
   align-items: center;
   top: 50%;
@@ -26,7 +26,7 @@
   }
 }
 
-#login-form {
+#auth-data-form {
   input {
     position: relative;
     display: block;
@@ -49,23 +49,20 @@
     opacity: 0.6;
   }
 
-  #forget-password-link, #signup-link {
-    a {
-      width: 139px;
-      height: 21px;
+  #forget-password-link, #signup-link, #auth-link {
+    width: 139px;
+    height: 21px;
 
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 21px;
-      /* identical to box height */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
 
-      text-decoration-line: underline;
+    text-decoration-line: underline;
 
-      color: #5C6A7C;
-
-    }
+    color: #5C6A7C;
   }
 
   #login-button {
